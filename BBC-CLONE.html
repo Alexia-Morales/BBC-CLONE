@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        header {
+            height: 55px;
+            background-color: black;
+            color: white;
+        }
+
+        nav *{
+            float: left;
+            width: 10%;
+            color: white;
+            display: block;
+        }
+
+        .logo{
+            width: 10%;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .img_signin{
+            width: 1%;
+            margin-top: 12px;
+        }
+
+        .sign_in{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none; 
+            color:white;
+            margin-top: 24px;
+            margin-right: 0px;
+
+        }
+        nav ul {
+            width: 80%;
+            font-family: Arial, Helvetica, sans-serif; 
+            list-style: none; 
+            padding-left: 0%;
+            margin-left: 0px; 
+            margin-right: 0px; 
+            margin-top: 0px;
+            border-right: 1px lightgrey;
+        }
+
+        nav li{
+            display:inline-block; 
+            text-align: center;
+        }
+
+        nav li a{
+            text-decoration: none; 
+            color:white; 
+            padding: 24px; 
+            display: block;
+            font-size: 100%;
+        }
+        nav form input{
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .encabezado{
+            margin-top: 3px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            color: gray;
+            width: 100%;
+            display: inline-block;
+        }
+
+        h3{
+            float: right;
+        }
+
+        .img_half{
+            width: 99%;
+            margin-bottom: 10px;
+        }
+
+        .img_quarter{
+            width: 98%;
+            margin-bottom: 0%;
+        }
+
+        .img_third{
+            width: 98%;
+        }
+
+        .encabezado_2{
+            border-left: thick solid #FF0000; 
+            font-family: Arial, Helvetica, sans-serif; 
+            color: gray;
+        }
+
+        .sub_1{
+            font-family: Arial, Helvetica, sans-serif; 
+            font-style: normal; 
+            font-weight: bold; 
+            font-size: 18px; 
+            line-height: 20px; 
+        }
+
+        .sub_2{
+            font-family: Arial, Helvetica, sans-serif; 
+            font-style:normal; 
+            font-size: 15px; 
+            line-height: 17px; 
+            margin-right: 10px;
+            color: slategray;
+        }
+
+        .sub_3{
+            border-left: thick solid #FF0000; 
+            color:darkgrey; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 14px; 
+            height: 15px; 
+            position: absolute;
+        }
+
+        main + section > section{
+            width: 33.3333%;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        main > section {
+            width: 50%;
+            display: inline-block;
+            float: left;
+
+        }
+
+        main section + section section {
+            width: 50%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="IMÁGENES/Logo.png" alt="bbc logo">
+            <a class="sign_in" href="">Sign In</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">News</a></li>
+                <li><a href="#home">Sport</a></li>
+                <li><a href="#home">Reel</a></li>
+                <li><a href="#home">Worklife</a></li>
+                <li><a href="#home">Travel</a></li>
+                <li><a href="#home">Future</a></li>
+                <li><a href="#home">Culture</a></li>
+                <li><a href="#home">More&nbsp;&#x23f7;</a></li>
+                <form action="">
+                    <input type="text" placeholder="Search&nbsp;&#128269;">
+                </form>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="encabezado">
+            <h2><b>Welcome to BBC.com</b></h2>
+            <h3>Thursday, 13 August&nbsp;</h3>
+        </div>
+        <section>
+            <img class="img_half" src="IMÁGENES/IMG1.png" alt="Israel and UK">
+        </section>
+
+        <section>
+            <section>
+                <img class="img_quarter" src="IMÁGENES/IMG2.png" alt="Americans, go home">
+            </section>
+
+            <section>
+                <img class="img_quarter" src="IMÁGENES/IMG3.png" alt="How will the world vaccinate seven billion people?">
+            </section>
+
+            <section>
+                <img class="img_quarter" src="IMÁGENES/IMG4.png" alt="The online 'productivity gyms">
+            </section>
+
+            <section>
+                <img class="img_quarter" src="IMÁGENES/IMG5.png" alt="The folk singer murdered for his music">
+            </section>
+        </section>
+    </main>
+
+        <section>
+            <h2 class="encabezado_2">&nbsp;News</h2>
+            <section>
+                <img class="img_third" src="IMÁGENES/IMG6.png" alt="Joe Byron">
+                <h3 class="sub_1">Biden and Harris say Trump has left US 'tatters'</h3>
+                <p class="sub_2">Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+                <span class="sub_3">&nbsp;US ELECTION 2020</span>
+            </section>
+
+            <section>
+                <img class="img_third" src="IMÁGENES/IMG7.png" alt="protest">
+                <h3 class="sub_1">Women form 'solidarity chains' in Belarus protests</h3>
+                <p class="sub_2">Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
+                <span class="sub_3">&nbsp;EUROPE</span>
+            </section>
+
+            <section>
+                <img class="img_third" src="IMÁGENES/IMG8.png" alt="Joe Byron">
+                <h3 class="sub_1">Trump says low-pressure shower heads won't wash</h3>
+                <p class="sub_2">The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+                <span class="sub_3">&nbsp;US & CANADA</span>
+            </section>
+        </section>
+
+
+
+
+
+</body>
+</html>
