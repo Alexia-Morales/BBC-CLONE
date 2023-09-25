@@ -42,8 +42,9 @@
         }
 
         .img_signin{
-            width: 1%;
-            margin-top: 12px;
+            width: 25%;
+            margin-top: 15px;
+            display: inline-block;
         }
 
         .sign_in{
@@ -54,6 +55,7 @@
             margin-right: 0px;
 
         }
+
         nav ul {
             width: 80%;
             font-family: Arial, Helvetica, sans-serif; 
@@ -77,9 +79,19 @@
             display: block;
             font-size: 100%;
         }
+        
         nav form input{
             width: 80%;
             margin-top: 20px;
+        }
+
+        .title_1{
+            display: inline-block; 
+        }
+
+        .title_2{
+            display: inline-block;
+            float: right;
         }
 
         .encabezado{
@@ -87,11 +99,6 @@
             font-family: Arial, Helvetica, sans-serif; 
             color: gray;
             width: 100%;
-            display: inline-block;
-        }
-
-        h3{
-            float: right;
         }
 
         .img_half{
@@ -110,8 +117,11 @@
 
         .encabezado_2{
             border-left: thick solid #FF0000; 
+            margin-top: 3px; 
             font-family: Arial, Helvetica, sans-serif; 
             color: gray;
+            width: 100%;
+            display: inline-block;
         }
 
         .sub_1{
@@ -163,7 +173,13 @@
     <header>
         <nav>
             <img class="logo" src="IMÁGENES/Logo.png" alt="bbc logo">
-            <a class="sign_in" href="">Sign In</a>
+            <div>
+                <img class="img_signin" src="IMÁGENES/Sign_in.png" alt="bbc logo">
+                <p class="sign_in">
+                    Sign&nbsp;In
+                </p>
+            </div>
+            
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#home">News</a></li>
@@ -182,12 +198,17 @@
         </nav>
 
     </header>
-
-    <main>
-        <div class="encabezado">
+    <div class="encabezado">
+        <div class="title_1">
             <h2><b>Welcome to BBC.com</b></h2>
+        </div>
+        <div class="title_2">
             <h3>Thursday, 13 August&nbsp;</h3>
         </div>
+        
+    </div>
+    <main>
+
         <section>
             <img class="img_half" src="IMÁGENES/IMG1.png" alt="Israel and UK">
         </section>
@@ -211,29 +232,29 @@
         </section>
     </main>
 
+     <section>
+        <h2 class="encabezado_2">&nbsp;News</h2>
         <section>
-            <h2 class="encabezado_2">&nbsp;News</h2>
-            <section>
-                <img class="img_third" src="IMÁGENES/IMG6.png" alt="Joe Byron">
-                <h3 class="sub_1">Biden and Harris say Trump has left US 'tatters'</h3>
-                <p class="sub_2">Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
-                <span class="sub_3">&nbsp;US ELECTION 2020</span>
-            </section>
-
-            <section>
-                <img class="img_third" src="IMÁGENES/IMG7.png" alt="protest">
-                <h3 class="sub_1">Women form 'solidarity chains' in Belarus protests</h3>
-                <p class="sub_2">Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
-                <span class="sub_3">&nbsp;EUROPE</span>
-            </section>
-
-            <section>
-                <img class="img_third" src="IMÁGENES/IMG8.png" alt="Joe Byron">
-                <h3 class="sub_1">Trump says low-pressure shower heads won't wash</h3>
-                <p class="sub_2">The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
-                <span class="sub_3">&nbsp;US & CANADA</span>
-            </section>
+            <img class="img_third" src="IMÁGENES/IMG6.png" alt="Joe Byron">
+            <h3 class="sub_1">Biden and Harris say Trump has left US 'tatters'</h3>
+            <p class="sub_2">Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+            <span class="sub_3">&nbsp;US ELECTION 2020</span>
         </section>
+
+        <section>
+            <img class="img_third" src="IMÁGENES/IMG7.png" alt="protest">
+            <h3 class="sub_1">Women form 'solidarity chains' in Belarus protests</h3>
+            <p class="sub_2">Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
+            <span class="sub_3">&nbsp;EUROPE</span>
+        </section>
+
+        <section>
+            <img class="img_third" src="IMÁGENES/IMG8.png" alt="Joe Byron">
+            <h3 class="sub_1">Trump says low-pressure shower heads won't wash</h3>
+            <p class="sub_2">The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+            <span class="sub_3">&nbsp;US & CANADA</span>
+        </section>
+     </section>
 
 
 
